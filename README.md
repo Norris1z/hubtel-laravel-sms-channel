@@ -1,13 +1,8 @@
 # Hubtel notification channel for Laravel 5.3+
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/norris1z/hubtel-laravel-sms-channel.svg?style=flat-square)](https://packagist.org/packages/norris1z/hubtel-laravel-sms-channel)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/norris1z/hubtel-laravel-sms-channel/master.svg?style=flat-square)](https://travis-ci.org/norris1z/hubtel-laravel-sms-channel)
-[![StyleCI](https://styleci.io/repos/:style_ci_id/shield)](https://styleci.io/repos/:style_ci_id)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/:sensio_labs_id.svg?style=flat-square)](https://insight.sensiolabs.com/projects/:sensio_labs_id)
-[![Quality Score](https://img.shields.io/scrutinizer/g/norris1z/hubtel-laravel-sms-channel.svg?style=flat-square)](https://scrutinizer-ci.com/g/norris1z/hubtel-laravel-sms-channel)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/norris1z/hubtel-laravel-sms-channel/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/norris1z/hubtel-laravel-sms-channel/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/norris1z/hubtel-laravel-sms-channel.svg?style=flat-square)](https://packagist.org/packages/norris1z/hubtel-laravel-sms-channel)
+[![Latest Stable Version](https://poser.pugx.org/norris1z/hubtel-laravel-sms-channel/v/stable)](https://packagist.org/packages/norris1z/hubtel-laravel-sms-channel)
+[![Total Downloads](https://poser.pugx.org/norris1z/hubtel-laravel-sms-channel/downloads)](https://packagist.org/packages/norris1z/hubtel-laravel-sms-channel)
+[![License](https://poser.pugx.org/norris1z/hubtel-laravel-sms-channel/license)](https://packagist.org/packages/norris1z/hubtel-laravel-sms-channel)
 
 This package makes it easy to send notifications using [Hubtel](https://hubtel.com) with Laravel 5.3+.
 
