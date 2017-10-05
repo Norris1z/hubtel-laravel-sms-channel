@@ -5,19 +5,19 @@ namespace NotificationChannels\Hubtel;
 class HubtelMessage
 {
     /**
-     * Sender's phone number
+     * Sender's phone number.
      * @var string
      */
     public $from;
 
     /**
-     * Recipient phone number
+     * Recipient phone number.
      * @var string
      */
     public $to;
 
     /**
-     * Message
+     * Message.
      * @var string
      */
     public $content;
@@ -30,31 +30,31 @@ class HubtelMessage
 
     /**
      *The Reference Number provided by the Client 
-     *prior to sending the message
+     *prior to sending the message.
      *@var int
      */
     public $clientReference;
 
     /**
-     * Indicates the type of message to be sent
+     * Indicates the type of message to be sent.
      *@var int
      */
     public $type;
 
     /**
-     *The User Data Header of the SMS Message being sent
+     *The User Data Header of the SMS Message being sent.
      *@var string 
      */
     public $udh;
 
     /**
-     *Indicates when to send the message
+     *Indicates when to send the message.
      *@var mixed
      */
     public $time;
 
     /**
-     *Indicates if this message must be sent as a flash message
+     *Indicates if this message must be sent as a flash message.
      *@var bool
      */
     public $flashMessage;
@@ -68,7 +68,7 @@ class HubtelMessage
     }
 
     /**
-     * Set the message sender's phone number
+     * Set the message sender's phone number.
      * @param string $from
      * @return $this
      */
@@ -79,7 +79,7 @@ class HubtelMessage
     }
 
     /**
-     * Set the recipient's phone number
+     * Set the recipient's phone number.
      * @param string $to
      * @return $this
      */
@@ -90,7 +90,7 @@ class HubtelMessage
     }
 
     /**
-     * Set the message content
+     * Set the message content.
      * @param string $content
      * @return $this
      */
@@ -101,17 +101,17 @@ class HubtelMessage
     }
 
     /**
-     *Set delivery report status
+     *Set delivery report status.
      * @return $this
      */
     public function registeredDelivery()
     {
-        $this->registeredDelivery = "true";
+        $this->registeredDelivery = 'true';
         return $this;
     }
 
     /**
-     * Set the client reference number
+     * Set the client reference number.
      * @param int $reference
      * @return $this
      */
@@ -122,7 +122,7 @@ class HubtelMessage
     }
 
     /**
-     * Set the message type
+     * Set the message type.
      * @param int $type
      * @return $this
      */
@@ -133,7 +133,7 @@ class HubtelMessage
     }
 
     /**
-     * Set the User Data Header of the SMS Message
+     * Set the User Data Header of the SMS Message.
      * @param string $udh
      * @return $this
      */
@@ -144,23 +144,23 @@ class HubtelMessage
     }
 
     /**
-     * Set the time to send the message
+     * Set the time to send the message.
      * @param mixed $time
      * @return $this
      */
     public function time($time)
     {
-        $this->time =$time;
+        $this->time = $time;
         return $this;
     }
 
     /**
-     * Set message as a flash message
+     * Set message as a flash message.
      * @return $this
      */
     public function flashMessage()
     {
-        $this->flashMessage = "true";
+        $this->flashMessage = 'true';
         return $this;
     }
 }

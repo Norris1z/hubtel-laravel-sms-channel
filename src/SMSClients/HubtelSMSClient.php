@@ -15,7 +15,7 @@ class HubtelSMSClient
 
     public $apiSecret;
     
-    public function __construct($apiKey,$apiSecret,Client $client)
+    public function __construct($apiKey, $apiSecret, Client $client)
     {
         $this->apiKey = $apiKey;
         $this->apiSecret = $apiSecret;
@@ -24,7 +24,7 @@ class HubtelSMSClient
 
     public function send(HubtelMessage $message)
     {
-        return $this->client->get($this->getApiURL().$this->buildMessage($message,$this->apiKey,$this->apiSecret));
+        return $this->client->get($this->getApiURL().$this->buildMessage($message, $this->apiKey, $this->apiSecret));
     }
 
     public function getApiURL()
@@ -32,16 +32,14 @@ class HubtelSMSClient
         return 'https://api.hubtel.com/v1/messages/send?';
     }
 
-    public function buildMessage(HubtelMessage $message,$apiKey,$apiSecret)
+    public function buildMessage(HubtelMessage $message, $apiKey, $apiSecret)
     {
-        $this->validateConfig($apiKey,$apiSecret);
+        $this->validateConfig($apiKey, $apiSecret);
         
-        $params = array("ClientId"=>$apiKey,"ClientSecret" => $apiSecret);
+        $params = array('ClientId'=>$apiKey,'ClientSecret' => $apiSecret);
 
-        foreach(get_object_vars($message) as $property => $value)
-        {
-            if(!is_null($value))
-            {
+        foreach(get_object_vars($message) as $property => $value) {
+            if(!is_null($value)) {
                 $params[ucfirst($property)] = $value;
             }
         }
@@ -49,15 +47,13 @@ class HubtelSMSClient
         return http_build_query($params);
     }
 
-    public function validateConfig($apiKey,$apiSecret)
+    public function validateConfig($apiKey, $apiSecret)
     {
-        if(is_null($apiKey))
-        {
+        if(is_null($apiKey)) {
             throw InvalidConfiguration::apiKeyNotSet();
         }
 
-        if(is_null($apiSecret))
-        {
+        if(is_null($apiSecret)) {
             throw InvalidConfiguration::apiSecretNotSet();
         }
         return $this;
