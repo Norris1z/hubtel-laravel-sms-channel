@@ -42,10 +42,10 @@ class HubtelChannel
             throw CouldNotSendNotification::contentNotSetError();
         }
 
-        if (is_null($message->to) && !is_null($notifiable->routeNotificationFor('SMS'))) {
+        if (is_null($message->to) && ! is_null($notifiable->routeNotificationFor('SMS'))) {
             $message->to = $notifiable->routeNotificationFor('SMS');
         }
-        
+
         return $this->client->send($message);
     }
 }

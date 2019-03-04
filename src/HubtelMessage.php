@@ -29,7 +29,7 @@ class HubtelMessage
     public $registeredDelivery;
 
     /**
-     *The Reference Number provided by the Client 
+     *The Reference Number provided by the Client
      *prior to sending the message.
      *@var int
      */
@@ -43,7 +43,7 @@ class HubtelMessage
 
     /**
      *The User Data Header of the SMS Message being sent.
-     *@var string 
+     *@var string
      */
     public $udh;
 
@@ -59,7 +59,6 @@ class HubtelMessage
      */
     public $flashMessage;
 
-    
     public function __construct($from = null, $to = null, $content = null)
     {
         $this->from = $from;
@@ -75,6 +74,7 @@ class HubtelMessage
     public function from($from)
     {
         $this->from = $from;
+
         return $this;
     }
 
@@ -86,6 +86,7 @@ class HubtelMessage
     public function to($to)
     {
         $this->to = $to;
+
         return $this;
     }
 
@@ -97,6 +98,7 @@ class HubtelMessage
     public function content($content)
     {
         $this->content = $content;
+
         return $this;
     }
 
@@ -107,6 +109,7 @@ class HubtelMessage
     public function registeredDelivery()
     {
         $this->registeredDelivery = 'true';
+
         return $this;
     }
 
@@ -118,6 +121,7 @@ class HubtelMessage
     public function clientReference($reference)
     {
         $this->clientReference = $reference;
+
         return $this;
     }
 
@@ -129,6 +133,7 @@ class HubtelMessage
     public function type($type)
     {
         $this->type = $type;
+
         return $this;
     }
 
@@ -140,6 +145,7 @@ class HubtelMessage
     public function udh($udh)
     {
         $this->udh = $udh;
+
         return $this;
     }
 
@@ -151,6 +157,7 @@ class HubtelMessage
     public function time($time)
     {
         $this->time = $time;
+
         return $this;
     }
 
@@ -161,6 +168,7 @@ class HubtelMessage
     public function flashMessage()
     {
         $this->flashMessage = 'true';
+
         return $this;
     }
 }
