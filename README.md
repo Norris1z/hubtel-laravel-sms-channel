@@ -101,6 +101,9 @@ public function routeNotificationForSMS()
 * `time($time)` : set the time to deliver the message
 * `flashMessage()` : sends the message as a flash message
 
+## Latest Notice 
+For developers who would want to use this package on VPS hosted applications, if the server location is US for which you have a US IP Address, you may need to seek whitelisting of the US Ip address from hubtel by mailing support@hubtel.com As i discovered through experience that the package would work fine on local machine because the IP used is a Ghanaian IP address but fails to work on a production server. Note however that this is not a package problem, as the package just organizes components for sending successful SMS messages within Laravel. It is even more challenging to know the cause of the problem when you are using laravel queues, because the response codes are not logged, the queue just logs Processing failed.Hubtels SMS server responds with a 403 Forbidden, when the same SMS is sent directly using Guzzlehttp on the production server (VPS). A 403 HTTP Response according to their website (hubtel) indicates the recipient has not given his/her approval to receive messages which is even more confusing. :) 
+
 Read more about the avialable methods on the [Hubtel Documentation Page](https://developers.hubtel.com/documentations/sendmessage)
 ## Changelog
 
