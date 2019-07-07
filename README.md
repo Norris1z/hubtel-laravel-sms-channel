@@ -22,7 +22,7 @@ This package makes it easy to send notifications using [Hubtel](https://hubtel.c
 
 ## Installation
 
-To get the latest version of Pushbullet Notification channel for Laravel 5.3+, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version of Hubtel Notification channel for Laravel 5.3+, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
 $ composer require norris1z/hubtel-laravel-sms-channel
