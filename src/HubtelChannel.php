@@ -3,8 +3,8 @@
 namespace NotificationChannels\Hubtel;
 
 use Illuminate\Notifications\Notification;
-use NotificationChannels\Hubtel\SMSClients\HubtelSMSClient;
 use NotificationChannels\Hubtel\Exceptions\CouldNotSendNotification;
+use NotificationChannels\Hubtel\SMSClients\HubtelSMSClient;
 
 class HubtelChannel
 {

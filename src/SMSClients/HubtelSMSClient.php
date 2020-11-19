@@ -3,8 +3,8 @@
 namespace NotificationChannels\Hubtel\SMSClients;
 
 use GuzzleHttp\Client;
-use NotificationChannels\Hubtel\HubtelMessage;
 use NotificationChannels\Hubtel\Exceptions\InvalidConfiguration;
+use NotificationChannels\Hubtel\HubtelMessage;
 
 class HubtelSMSClient
 {
