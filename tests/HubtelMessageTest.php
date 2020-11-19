@@ -2,14 +2,14 @@
 
 namespace NotificationChannels\Hubtel\Test;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use NotificationChannels\Hubtel\HubtelMessage;
 
-class HubtelMessageTest extends PHPUnit_Framework_TestCase
+class HubtelMessageTest extends TestCase
 {
     public $message;
 
-    public function setUp()
+    public function setUp():void
     {
         parent::setUp();
         $this->message = new HubtelMessage();
