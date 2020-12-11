@@ -3,8 +3,8 @@
 namespace NotificationChannels\Hubtel;
 
 use Illuminate\Notifications\Notification;
-use NotificationChannels\Hubtel\SMSClients\HubtelSMSClient;
 use NotificationChannels\Hubtel\Exceptions\CouldNotSendNotification;
+use NotificationChannels\Hubtel\SMSClients\HubtelSMSClient;
 
 class HubtelChannel
 {
@@ -42,10 +42,10 @@ class HubtelChannel
             throw CouldNotSendNotification::contentNotSetError();
         }
 
-        if (is_null($message->to) && !is_null($notifiable->routeNotificationFor('SMS'))) {
+        if (is_null($message->to) && ! is_null($notifiable->routeNotificationFor('SMS'))) {
             $message->to = $notifiable->routeNotificationFor('SMS');
         }
-        
+
         return $this->client->send($message);
     }
 }
