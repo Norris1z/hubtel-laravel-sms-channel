@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\Hubtel\Test;
+namespace NotificationChannels\Hubtel\Test\Unit;
 
 use PHPUnit\Framework\TestCase;
 use NotificationChannels\Hubtel\HubtelMessage;
