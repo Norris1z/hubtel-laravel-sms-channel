@@ -28,7 +28,7 @@ class HubtelSMSClient
 
     public function getApiURL()
     {
-        return 'https://api.hubtel.com/v1/messages/send?';
+        return 'https://smsc.hubtel.com/v1/messages/send?';
     }
 
     public function buildMessage(HubtelMessage $message, $apiKey, $apiSecret)
